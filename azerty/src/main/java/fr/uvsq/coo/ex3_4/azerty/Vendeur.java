@@ -1,4 +1,4 @@
-package fr.uvsq.coo.ex3_3.azerty;
+package fr.uvsq.coo.ex3_4.azerty;
 
 public class Vendeur extends Employe {
 

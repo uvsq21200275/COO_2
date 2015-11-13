@@ -1,4 +1,4 @@
-package fr.uvsq.coo.ex3_2.azerty;
+package fr.uvsq.coo.ex3_3.azerty;
 
 public class afficheCoord {
 
