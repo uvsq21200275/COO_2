@@ -1,5 +1,11 @@
 package fr.uvsq.coo.ex3_2.azerty;
 
+/**
+ * 
+ * @author Thomas Estrabaud
+ * 
+ */
+
 public class Game {
 	private int rolls[] = new int[21];
 	private int currentRoll = 0;

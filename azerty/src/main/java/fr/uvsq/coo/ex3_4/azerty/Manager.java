@@ -2,6 +2,12 @@ package fr.uvsq.coo.ex3_4.azerty;
 
 import java.util.ArrayList;
 
+/**
+ * 
+ * @author Thomas Estrabaud
+ * 
+ */
+
 public class Manager extends Employe {
 
 	private ArrayList<Employe> liste;

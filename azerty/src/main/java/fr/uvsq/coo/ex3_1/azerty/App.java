@@ -1,13 +1,13 @@
 package fr.uvsq.coo.ex3_1.azerty;
 
 /**
- * Hello world!
- *
+ * 
+ * @author Thomas Estrabaud
+ * 
  */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
-    }
+
+public class App {
+	public static void main(String[] args) {
+		System.out.println("Hello World!");
+	}
 }

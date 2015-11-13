@@ -5,6 +5,12 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * 
+ * @author Thomas Estrabaud
+ * 
+ */
+
 public class TestGame {
 
 	private Game g;

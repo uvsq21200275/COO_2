@@ -1,5 +1,11 @@
 package fr.uvsq.coo.ex3_1.azerty;
 
+/**
+ * 
+ * @author Thomas Estrabaud
+ * 
+ */
+
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;

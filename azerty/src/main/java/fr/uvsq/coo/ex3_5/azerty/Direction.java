@@ -1,5 +1,11 @@
 package fr.uvsq.coo.ex3_5.azerty;
 
+/**
+ * 
+ * @author Thomas Estrabaud
+ * 
+ */
+
 public class Direction {
 
 	public int dir;

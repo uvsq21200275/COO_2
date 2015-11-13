@@ -1,5 +1,11 @@
 package fr.uvsq.coo.ex3_4.azerty;
 
+/**
+ * 
+ * @author Thomas Estrabaud
+ * 
+ */
+
 import java.util.ArrayList;
 
 public class Entreprise {

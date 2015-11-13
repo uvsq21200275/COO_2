@@ -2,6 +2,12 @@ package fr.uvsq.coo.ex3_5.azerty;
 
 import java.util.ArrayList;
 
+/**
+ * 
+ * @author Thomas Estrabaud
+ * 
+ */
+
 public class Robot {
 
 	static ArrayList<Robot> list = new ArrayList<Robot>();
