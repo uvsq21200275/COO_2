@@ -1,8 +1,9 @@
 package fr.uvsq.coo.ex3_8.azerty;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public final class Personnel implements Element {
+public final class Personnel implements Element, Serializable {
 
 	private final String Nom, Prenom, Fonction, Naissance;
 	private final ArrayList<String> list;
@@ -13,6 +14,14 @@ public final class Personnel implements Element {
 		this.Fonction = Builder.Fonction;
 		this.Naissance = Builder.Naissance;
 		this.list = Builder.list;
+	}
+
+	public String getNom() {
+		return this.Nom;
+	}
+
+	public String getPrenom() {
+		return this.Prenom;
 	}
 
 	public void Affichage() {
