@@ -25,7 +25,7 @@ public class PersonnelTest {
 
 		try (ObjectOutputStream out = new ObjectOutputStream(
 				new BufferedOutputStream(new FileOutputStream(dataFile)))) {
-			out.writeObject(P.getNom());
+			out.writeUTF(P.getNom());
 			out.writeUTF(P.getPrenom());
 
 		}
