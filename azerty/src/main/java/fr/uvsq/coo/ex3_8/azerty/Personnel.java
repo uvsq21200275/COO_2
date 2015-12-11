@@ -24,6 +24,14 @@ public final class Personnel implements Element, Serializable {
 		return this.Prenom;
 	}
 
+	public String getFonction() {
+		return Fonction;
+	}
+
+	public String getNaissance() {
+		return Naissance;
+	}
+
 	public void Affichage() {
 		System.out.println(Nom + " " + Prenom + " " + Fonction + " "
 				+ Naissance);

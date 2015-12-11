@@ -4,8 +4,12 @@ public class DAOFactoryJDBC extends DAOAbstractFactory {
 
 	@Override
 	public DAO<Personnel> getPersonnelDAO() {
-		// TODO Auto-generated method stub
-		return null;
+		return new PersonnelDAO_JBDC();
+	}
+
+	@Override
+	public DAO<Groupe> getGroupeDAO() {
+		return new GroupeDAO_JBDC();
 	}
 
 }

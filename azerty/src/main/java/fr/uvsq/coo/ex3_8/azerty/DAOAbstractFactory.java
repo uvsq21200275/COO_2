@@ -8,6 +8,8 @@ public abstract class DAOAbstractFactory {
 
 	public abstract DAO<Personnel> getPersonnelDAO();
 
+	public abstract DAO<Groupe> getGroupeDAO();
+
 	public static DAOAbstractFactory getFactory(DAOType type) {
 		if (type == DAOType.JDBC)
 			return new DAOFactoryJDBC();

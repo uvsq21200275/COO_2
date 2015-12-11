@@ -11,17 +11,10 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 
-public class PersonnelDAO implements DAO<Personnel> {
+public class PersonnelDAOSerial extends DAO<Personnel> {
 
 	@Override
-	public Personnel create(Personnel obj) {
-		/*
-		 * try { PreparedStatement prepare = connect
-		 * .prepareStatement("INSERT INTO personnel(nom,prenom) VALUES(?,?)");
-		 * prepare.setString(1, obj.getNom()); prepare.setString(2,
-		 * obj.getPrenom()); int result = prepare.executeUpdate(); assert result
-		 * == 1; } catch (SQLException e) { e.printStackTrace(); } return obj;
-		 */
+	public void create(Personnel obj) {
 
 		File dataFile = new File("C:\\Users\\Thomas\\save.txt");
 
@@ -35,24 +28,10 @@ public class PersonnelDAO implements DAO<Personnel> {
 			e.printStackTrace();
 		}
 
-		return obj;
-
 	}
 
 	@Override
 	public Personnel find(String id) {
-		/*
-		 * Personnel P = new Personnel.PBuilder("", "").Build(); try {
-		 * PreparedStatement prepare = connect
-		 * .prepareStatement("SELECT * FROM personnel WHERE nom = ?");
-		 * prepare.setString(1, id); ResultSet result = prepare.executeQuery();
-		 * if (result.first()) { P = new
-		 * Personnel.PBuilder(result.getString("nom"),
-		 * result.getString("prenom")).Build(); } } catch (SQLException e) {
-		 * e.printStackTrace(); }
-		 * 
-		 * return P;
-		 */
 
 		File dataFile = new File("C:\\Users\\Thomas\\save.txt");
 
@@ -76,7 +55,7 @@ public class PersonnelDAO implements DAO<Personnel> {
 	}
 
 	@Override
-	public Personnel update(Personnel obj) {
+	public void update(Personnel obj) {
 
 		File dataFile = new File("C:\\Users\\Thomas\\save.txt");
 		ArrayList<Personnel> list = new ArrayList<Personnel>();
@@ -103,7 +82,6 @@ public class PersonnelDAO implements DAO<Personnel> {
 		for (Personnel p : list) {
 			create(p);
 		}
-		return new Personnel.PBuilder("", "").Build();
 	}
 
 	@Override
